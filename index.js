@@ -4,7 +4,8 @@ function required (paramName) {
   let msg = 'Missing required parameter';
   msg += paramName ? ` "${paramName}"` : '';
   msg += callerName ? ` in function "${callerName}"` : '';
-  throw new Error(msg);
+  const PARAM_REQUIRED = msg;
+  throw new Error(PARAM_REQUIRED);
 }
 
 module.exports = required;
