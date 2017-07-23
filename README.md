@@ -1,6 +1,6 @@
 # Required parameters
 
-Throw an error when a given parameter isn't provided to a function.
+Throws an error when a given parameter is not provided to a function.
 
 [![NPM Version][npm-image]][npm-url] ![NPM Downloads][downloads-image] [![GitHub issues][issues-image]][issues-url] [![Telegram][telegram-image]][telegram-url]
 
@@ -30,7 +30,7 @@ npm i --save is-required
 Parameter `val` is required:
 
 ```javascript
-const isRequired = require('./is-required');
+const isRequired = require('is-required');
 
 function foo (val = isRequired('val')) {
   return val;
@@ -41,19 +41,19 @@ foo();
 
 Throws Error:
 ```bash
-Error: Missing required argument "val" in function "foo"
+Error: Missing required parameter "val" in function "foo"
 ```
 
-You can omit the parameter name:
+You can omit the name:
 
 ```javascript
-const required = require('./is-required');
+const required = require('is-required');
 
 function bar (myParam = required()) {
   return myParam;
 }
 
 bar();
-//Error: Missing required argument in function "foo"
+//Error: Missing required parameter in function "foo"
 
 ```

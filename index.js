@@ -1,9 +1,9 @@
 
 function required (paramName) {
-  const caller = required.caller.name;
-  let msg = 'Missing required argument';
+  const callerName = required.caller.name;
+  let msg = 'Missing required parameter';
   msg += paramName ? ` "${paramName}"` : '';
-  msg += caller ? ` in function "${caller}"` : '';
+  msg += callerName ? ` in function "${callerName}"` : '';
   throw new Error(msg);
 }
 
