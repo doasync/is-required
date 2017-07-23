@@ -1,7 +1,7 @@
 {
   "name": "is-required",
   "main": "index.js",
-  "version": "0.0.0",
+  "version": "1.0.1",
   "description": "Required parameters for functions",
   "author": {
     "name": "DoAsync",
