@@ -1,0 +1,26 @@
+{
+  "name": "is-required",
+  "main": "index.js",
+  "version": "0.0.0",
+  "description": "Required parameters for functions",
+  "author": {
+    "name": "DoAsync",
+    "email": "doasync@gmail.com"
+  },
+  "devDependencies": {
+    "eslint-config-airbnb-standard": "^1.4.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/doasync/is-required.git"
+  },
+  "keywords": [
+    "check",
+    "required",
+    "required params",
+    "required arguments",
+    "required args",
+    "arguments"
+  ],
+  "license": "MIT"
+}

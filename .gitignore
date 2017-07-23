@@ -1,0 +1,8 @@
+# Dependency directories
+node_modules/
+
+# JetBrains IntelliJ IDEA IDE (WebStorm)
+\.idea
+
+# package zip
+is-required\.zip
