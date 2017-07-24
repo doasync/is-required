@@ -17,7 +17,9 @@ Throws an error when a given parameter is not provided to a function.
 
 In ECMAScript 6, the default argument expression gets evaluated at call time
 when a parameter is missing or undefined. You can use `required()` as a default value
-to make that parameter to be provided forcibly.
+to make that parameter to be provided forcibly, throwing an error. It is better to catch
+and identify such an error as early as possible rather than get something like
+`TypeError: Cannot read property 'body' of undefined`.
 
 ## Installation
 
@@ -41,7 +43,7 @@ foo();
 
 Throws Error:
 ```bash
-Error: Missing required parameter "val" in function "foo"
+Error: Undefined or missing required parameter "val" in function "foo"
 ```
 
 You can omit the name:
@@ -54,6 +56,6 @@ function bar (myParam = required()) {
 }
 
 bar();
-//Error: Missing required parameter in function "foo"
+//Error: Undefined or missing required parameter in function "foo"
 
 ```
